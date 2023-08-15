@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head style="background-color: #ffffff;">
+	<meta charset="utf-8" />
+	<meta http-equiv="Pragma" content="private" />
+	<meta http-equiv="Cache-Control" content="private, max-age=5400, pre-check=5400" />
+	<title>1nvader PDP-1</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width = 1110, initial-scale = 1.0" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/homeicon-precomposed57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/homeicon-precomposed72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/homeicon-precomposed.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="application-name" content="1nvader PDP-1" />
+	<meta name="description" content="Play the original Spacewar!, the classic 1960s video game on a virtual PDP-1. Emulation of the first video game ever (with accurate screen graphics) in plain HTML5." />
+	<meta name="keywords" content="video game,virtual PDP-1,PDP-1,emulation,1nvader,Arlasoft,Masswerk,retro" />
+	<meta property="og:title" content="1nvader for the PDP-1" />
+	<meta property="og:site_name" content="1nvader for the PDP-1" />
+	<meta property="og:description" content="Play 1nvader on a virtual PDP-1." />
+	<link rel="stylesheet" href="spacewar-ng.css" type="text/css" />
+	<link rel="stylesheet" href="spacewar-tooltip.css" type="text/css" />
+	<link rel="stylesheet" href="/webfonts/lp1.css" type="text/css" />
+	<link rel="stylesheet" href="webfonts-ng.css" type="text/css" />
+	<link rel="preload" href="images/pdp1-type30.jpg" as="image" type="image/jpeg" />
+	<link rel="preload" href="images/pdp1-type30-crt.png" as="image" type="image/png" />
+	<script type="text/javascript" src="imgembedder.js"></script>
+	<script type="text/javascript" src="spacewar_pdp1_engine_ng.js"></script>
+	<script type="text/javascript" src="modules/myGame.js"></script>
+	<script type="text/javascript" src="modules/myGame.js"></script>
+	<script type="text/javascript" src="modules/spacewar_4_1f.js"></script>
+	<script type="text/javascript" src="modules/spacewar_4_2a.js"></script>
+	<script type="text/javascript" src="modules/spacewar_4_3.js"></script>
+	<script type="text/javascript" src="modules/spacewar_4_8.js"></script>
+	<script type="text/javascript" src="modules/spacewar_4_1hafb.js"></script>
+	<script type="text/javascript" src="modules/spacewar_2015.js"></script>
+	<script type="text/javascript" src="modules/spacewar_3_1_winds_of_space.js"></script>
+	<script type="text/javascript" src="modules/snowflake_sa100.js"></script>
+	<script type="text/javascript" src="modules/dpys5.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<!-- 	<script type="text/javascript">
+		function selectSpacewarModule(id) {
+			if (typeof PDP1GUI !== 'undefined') {
+				if (PDP1GUI.selectModule(id)) {
+					var el=document.getElementById('topbar');
+					if (el && el.scrollIntoView) {
+						el.scrollIntoView(true);
+					}
+					else {
+						window.scrollTo(0,0);
+					}
+				}
+			}
+		}
+	</script> -->
+</head>
+<body style ="background-color:#ffffff" >
+<!-- <h1>Spacewar!</h1>
+<div id="topbar"
+	hidden=true>
+	<div id="topbarContent">
+		<div id="controls" class="notranslate">
+			<div id="versionControl"><label for="spacewarCodeSelect" class="toolTipBottom" data-title="Select a version of Spacewar!">Version:</label> <select id="spacewarCodeSelect" onfocus="PDP1GUI.toolsMenuClose();"></select></div>
+			<div id="keyboardControl"><label for="keyboardSelect" style="margin-left: 0.8em; margin-right: 0.5em;" class="toolTipBottom" data-title="Select your keyboard layout">Keyboard:</label><select id="keyboardSelect" onchange="PDP1GUI.setKeyLang(this.options[this.selectedIndex].value)" onfocus="PDP1GUI.toolsMenuClose();">
+				<option selected value="int">WASD / IJKL &ndash; Standard</option>
+				<option value="fr">ZQSF / IJKL &ndash; French</option>
+				<option value="tr">GUIE / NKML &ndash; Turkish (F)</option>
+				<option value="dvorak">,AOE / CHTN &ndash; Dvorak</option>
+				<option value="colemak">WARS / UNEI &ndash; Colemak</option>
+				<option value="neo">VUIA / GNRT &ndash; Neo</option>
+			</select></div>
+		</div>
+	</div>
+</div> -->
+<div id="gamearea">
+	<div id="pdp1">
+	
+		<div id="pdp1screen">
+
+			<canvas style="background-color: #111111"; id="pdp1_canvas"></canvas>
+			<div id="reset" class="toolTipBottom" data-title="Service/Reset"></div>
+			<div id="tw5indicator" onclick="PDP1GUI.toggleTW5(); return false;" class="toolTipBottom" data-title="Click this to toggle the score display (shown after each game).&#13;&#10;Clearing this while the score board is visible resets all scores."></div>
+			<div id="restart" onclick="PDP1GUI.restart(); return false;" class="toolTipBottom" data-title="Click to restart the game."></div>
+			<div id="decLogo"><span id="crtPopupTrigger" onclick="PDP1GUI.showCRTPopup(); return false;" class="toolTipBottom" data-title="Click for CRT-adjustments"></span></div>
+			<div id="moduleLinksOverlay"></div>
+			<noscript>
+				<p>JavaScript required.<br />Please activate JavaScript in your browser settings and reload this page.</p>
+				<div style="display: none;">Screenshot:<br /><img src="images/pagepreview.png" width="800" height="670" alt="Spacewar!, PDP-1 emulation in JavaScript (screenshot)" title="Sceenshot of Spacewar! on a PDP-1 emulation in JavaScript" style="display: none;" /></div>
+			</noscript>
+		</div>
+	</div>
+</div>
+
+<div id="fullscreenToggle" onclick="PDP1GUI.toggleFullscreen();"></div>
+
+</body>
+</html>
