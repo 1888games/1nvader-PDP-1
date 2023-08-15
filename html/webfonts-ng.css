@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Nunito';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/webfonts/nunito/nunito-regular-webfont.eot');
+    src: url('/webfonts/nunito/nunito-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/webfonts/nunito/nunito-regular-webfont.woff') format('woff'),
+         url('/webfonts/nunito/nunito-regular-webfont.ttf') format('truetype'),
+         url('/webfonts/nunito/nunito-regular-webfont.svg#nunitoregular') format('svg');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-regular.eot'); 
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-regular.woff2') format('woff2'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-regular.woff') format('woff'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-regular.ttf') format('truetype'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-regular.svg#NunitoSans') format('svg'); 
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-italic.eot'); 
+  src: local('Nunito Sans Italic'), local('NunitoSans-Italic'),
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-italic.eot?#iefix') format('embedded-opentype'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-italic.woff2') format('woff2'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-italic.woff') format('woff'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-italic.ttf') format('truetype'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-italic.svg#NunitoSans') format('svg'); 
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-700.eot'); 
+  src: local('Nunito Sans Bold'), local('NunitoSans-Bold'),
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-700.woff2') format('woff2'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-700.woff') format('woff'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-700.ttf') format('truetype'), 
+       url('/webfonts/NunitoSans/nunito-sans-v6-latin-ext_latin-700.svg#NunitoSans') format('svg'); 
+}
