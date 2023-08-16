@@ -33,7 +33,7 @@ stars.asm+^
 sprite.asm+^
 controls.asm+^
 data.asm+^
-end.asm ^   
+end.asm ^
 main.mac /b
 
 rem run main.mac through the macro1 PDP-1 assembler
@@ -44,6 +44,7 @@ macro1 ../scripts/main.mac
 
 
 rem tidy up and move the build files to build folder
+
 cd..
 
 cd scripts
